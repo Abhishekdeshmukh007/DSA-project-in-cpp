@@ -1,6 +1,6 @@
-🚨 RescueLoop
+# RescueLoop
 
-Disaster Rescue Coordination Simulator
+## Disaster Rescue Coordination Simulator
 
 <p align="center">
   <b>A C++ Data Structures and Algorithms Project</b><br>
@@ -12,7 +12,7 @@ Disaster Rescue Coordination Simulator
   <img src="https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge" alt="Project Status">
 </p>---
 
-📑 Table of Contents
+## Table of Contents
 
 - "Introduction" (#-introduction)
 - "Problem Statement" (#-problem-statement)
@@ -33,7 +33,7 @@ Disaster Rescue Coordination Simulator
 
 ---
 
-📌 Introduction
+## Introduction
 
 RescueLoop is a C++-based disaster rescue coordination simulator designed to demonstrate the practical application of circular and doubly linked lists.
 
@@ -41,13 +41,13 @@ The system simulates rescue team management, emergency incident handling, team a
 
 The main goal is to demonstrate how dynamic data structures can organize information and support decision-making in a simulated emergency environment.
 
-💡 Problem Statement
+## Problem Statement
 
 During disasters, multiple emergencies may occur simultaneously while rescue teams have limited availability. Managing team assignments, incident priorities, and response records can become challenging.
 
 RescueLoop provides an educational simulation that organizes rescue teams and incidents using linked lists, making it easier to demonstrate dynamic team traversal and incident-history management.
 
-🎯 Objectives
+## Objectives
 
 - Manage rescue teams dynamically.
 - Create and prioritize emergency incidents.
@@ -59,15 +59,15 @@ RescueLoop provides an educational simulation that organizes rescue teams and in
 
 ---
 
-💡 Proposed Solution
+## Proposed Solution
 
 RescueLoop consists of two primary modules.
 
-🔄 1. Rescue Team Management
+### 1. Rescue Team Management
 
 A circular linked list maintains the rescue teams in a repeating sequence. The simulator traverses the list to find an eligible team and skips teams that are busy or unavailable.
 
-↔️ 2. Incident History Management
+### 2. Incident History Management
 
 A doubly linked list stores incident records, including the incident ID, disaster type, location, priority, assigned team, and status.
 
@@ -75,33 +75,33 @@ The operator can navigate through incident records in both forward and backward 
 
 ---
 
-✨ Key Features
+## Key Features
 
-Feature| Description
-👥 Team Management| Register and manage rescue teams.
-🚨 Incident Creation| Record disaster type, location, and priority.
-🔄 Circular Assignment| Search for eligible teams through circular traversal.
-🟢 Availability Tracking| Track available, busy, and unavailable teams.
-📋 Incident History| Store incident records in a doubly linked list.
-↔️ History Navigation| Navigate through previous and next incidents.
-⚡ Priority Handling| Apply predefined rules to handle urgent incidents.
-📊 Statistics| Display incident and team summaries.
+### Feature| Description
+ Team Management| Register and manage rescue teams.
+ Incident Creation| Record disaster type, location, and priority.
+ Circular Assignment| Search for eligible teams through circular traversal.
+ Availability Tracking| Track available, busy, and unavailable teams.
+ Incident History| Store incident records in a doubly linked list.
+ History Navigation| Navigate through previous and next incidents.
+ Priority Handling| Apply predefined rules to handle urgent incidents.
+ Statistics| Display incident and team summaries.
 
 «Note: These features describe the planned functionality. Each feature should be marked as implemented only after it has been developed and tested.»
 
-🧠 Data Structures Used
+## Data Structures Used
 
-1. Circular Linked List
+### Circular Linked List
 
 A circular linked list is used to manage and traverse rescue teams continuously.
 
-Structure:
+### Structure:
 
 Team A → Team B → Team C
    ↑                 |
    └─────────────────┘
 
-Operations:
+### Operations:
 
 - Insert a rescue team.
 - Delete a rescue team.
@@ -111,15 +111,15 @@ Operations:
 
 Why it is used: It allows traversal to continue from the beginning after reaching the last team.
 
-2. Doubly Linked List
+### 2. Doubly Linked List
 
 A doubly linked list is used to maintain and navigate incident history.
 
-Structure:
+### Structure:
 
 NULL ← Incident 1 ⇄ Incident 2 ⇄ Incident 3 → NULL
 
-Operations:
+### Operations:
 
 - Insert incident records.
 - Delete incident records.
@@ -131,7 +131,7 @@ Why it is used: Each node contains pointers to both the previous and next nodes,
 
 ---
 
-🔄 System Workflow
+## System Workflow
 
           START
             |
@@ -171,7 +171,7 @@ Why it is used: Each node contains pointers to both the previous and next nodes,
 
 ---
 
-🌊 Example Scenario
+### Example Scenario
 
 Suppose a flood affects three areas and three rescue teams are available.
 
@@ -188,7 +188,7 @@ This is an illustrative scenario. Actual assignments depend on the implemented r
 
 ---
 
-🛠️ Technologies Used
+## Technologies Used
 
 Technology| Purpose
 C++| Core programming language
@@ -201,7 +201,7 @@ GitHub| Version control and project documentation
 
 ---
 
-📁 Project Structure
+## Project Structure
 
 DSA-project-in-cpp/
 └── Project 1/
@@ -215,14 +215,14 @@ DSA-project-in-cpp/
     │   └── rescue.cpp
     └── README.md
 
-▶️ How to Run
+## How to Run
 
-Prerequisites
+### Prerequisites
 
 - A C++ compiler such as GCC or MinGW.
 - A terminal or command prompt.
 
-Compile the Program
+### Compile the Program
 
 Run the following command from the repository root:
 
@@ -230,11 +230,11 @@ g++ -std=c++17 -Wall -Wextra "Project 1/source code/rescue.cpp" -o rescueloop
 
 Execute the Program
 
-Windows:
+### Windows:
 
 rescueloop.exe
 
-Linux:
+### Linux:
 
 ./rescueloop
 
@@ -242,7 +242,7 @@ Linux:
 
 ---
 
-✅ Advantages
+## Advantages
 
 - Demonstrates two linked-list structures in one project.
 - Supports dynamic insertion and deletion.
@@ -251,7 +251,7 @@ Linux:
 - Requires no specialized hardware.
 - Can be extended with additional simulation features.
 
-⚠️ Limitations
+## Limitations
 
 - Uses simulated disaster information.
 - Team assignment depends on predefined rules.
@@ -259,7 +259,7 @@ Linux:
 - A basic console version does not include a live map.
 - Is not intended for real-world emergency dispatch.
 
-🚀 Future Scope
+## Future Scope
 
 - Develop a graphical dashboard.
 - Add disaster map visualization.
@@ -269,7 +269,7 @@ Linux:
 - Implement configurable team skills and resource requirements.
 - Compare assignment strategies using performance statistics.
 
-📚 Learning Outcomes
+## Learning Outcomes
 
 - Understand circular and doubly linked lists.
 - Implement insertion, deletion, and traversal.
@@ -281,7 +281,7 @@ Linux:
 
 ---
 
-📄 Disclaimer
+## Disclaimer
 
 RescueLoop is an educational simulation developed for learning and demonstration purposes. It is not designed or validated for real-world emergency response or life-critical decision-making.
 
