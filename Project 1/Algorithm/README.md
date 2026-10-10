@@ -152,7 +152,6 @@ STOP
 ### 5.1 Circular Linked List
 
 Each rescue team node stores team information and a pointer to the next team. The last node points back to the first node.
-``text
         +---------+      +---------+
         | Team A  | ---> | Team B  |
         +---------+      +---------+
@@ -162,8 +161,7 @@ Each rescue team node stores team information and a pointer to the next team. Th
         | Team C  |
         +---------+
              |
-             +------> Team A ```
-
+             +------> Team A
 Key feature: The list forms a circle, allowing continuous traversal of rescue teams.
 
 ### 5.2 Doubly Linked List
@@ -215,5 +213,3 @@ Note: The actual complexity depends on how the operations are implemented in the
 RescueLoop demonstrates how linked-list data structures can support disaster rescue coordination. The circular linked list provides continuous team traversal, while the doubly linked list supports incident-history management. Together, these concepts help demonstrate dynamic data management using C++.
 
 ---
-
-Implementation note: This document describes the intended algorithms for RescueLoop. Ensure that the pseudocode and stated features match the actual implementation in "source code/rescue.cpp".
