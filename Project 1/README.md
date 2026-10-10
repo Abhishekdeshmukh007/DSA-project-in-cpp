@@ -12,27 +12,6 @@
   <img src="https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge" alt="Project Status">
 </p>---
 
-## Table of Contents
-
-- "Introduction" (#-introduction)
-- "Problem Statement" (#-problem-statement)
-- "Objectives" (#-objectives)
-- "Proposed Solution" (#-proposed-solution)
-- "Key Features" (#-key-features)
-- "Data Structures Used" (#-data-structures-used)
-- "System Workflow" (#-system-workflow)
-- "Example Scenario" (#-example-scenario)
-- "Technologies Used" (#-technologies-used)
-- "Project Structure" (#-project-structure)
-- "How to Run" (#-how-to-run)
-- "Advantages" (#-advantages)
-- "Limitations" (#-limitations)
-- "Future Scope" (#-future-scope)
-- "Learning Outcomes" (#-learning-outcomes)
-- "Disclaimer" (#-disclaimer)
-
----
-
 ## Introduction
 
 RescueLoop is a C++-based disaster rescue coordination simulator designed to demonstrate the practical application of circular and doubly linked lists.
@@ -133,43 +112,22 @@ Why it is used: Each node contains pointers to both the previous and next nodes,
 
 ## System Workflow
 
-          START
-            |
-            v
-    Register Rescue Teams
-            |
-            v
-    Create Emergency Incident
-            |
-            v
-     Enter Incident Priority
-            |
-            v
-   Search Circular Team List
-            |
-            v
-     Is a Team Available?
-         /         \
-       Yes          No
-        |            |
-        v            v
-  Assign Team    Keep Pending
-        |            |
-        └─────┬──────┘
-              |
-              v
-   Update Incident History
-              |
-              v
-   Update Team and Incident Status
-              |
-              v
-    Display Reports and History
-              |
-              v
-       Continue or Exit
-
----
+flowchart TD
+    A([Start]) --> B[Register Rescue Teams]
+    B --> C[Create Emergency Incident]
+    C --> D[Enter Incident Details]
+    D --> E[Set Incident Priority]
+    E --> F[Search Circular Team List]
+    F --> G{Team Available?}
+    G -- Yes --> H[Assign Rescue Team]
+    G -- No --> I[Keep Incident Pending]
+    H --> J[Update Incident History]
+    I --> J
+    J --> K[Update Team and Incident Status]
+    K --> L[Display Reports and History]
+    L --> M{Continue?}
+    M -- Yes --> C
+    M -- No --> N([End])
 
 ### Example Scenario
 
@@ -187,33 +145,14 @@ The operator can review the incident history to understand how the simulated res
 This is an illustrative scenario. Actual assignments depend on the implemented rules.
 
 ---
-
 ## Technologies Used
 
-Technology| Purpose
-C++| Core programming language
-Circular Linked List| Rescue team traversal
-Doubly Linked List| Incident history navigation
-Pointers| Connecting linked-list nodes
-Dynamic Memory Allocation| Creating and deleting nodes
-GCC / MinGW| Compiling the program
-GitHub| Version control and project documentation
+| Technology | Purpose |
+|---|---|
+| C++ | Core programming language |
+| Circular Linked List | Rescue team traversal |
+| Doubly Linked List | Incident history navigation |
 
----
-
-## Project Structure
-
-DSA-project-in-cpp/
-└── Project 1/
-    ├── Algorithm/
-    │   └── README.md
-    ├── Flowchart/
-    │   └── README.md
-    ├── Output/
-    │   └── README.md
-    ├── source code/
-    │   └── rescue.cpp
-    └── README.md
 
 ## How to Run
 
