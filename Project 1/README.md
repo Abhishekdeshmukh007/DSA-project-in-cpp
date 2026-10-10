@@ -110,8 +110,8 @@ Why it is used: Each node contains pointers to both the previous and next nodes,
 
 ---
 
-🔄 System Workflow
-
+## System Workflow
+'''mermaid
 flowchart TD
     A([Start]) --> B[Register Rescue Teams]
     B --> C[Create Emergency Incident]
@@ -128,7 +128,7 @@ flowchart TD
     L --> M{Continue?}
     M -- Yes --> C
     M -- No --> N([End])
-    
+ ' ''' '   
 ### Example Scenario
 
 Suppose a flood affects three areas and three rescue teams are available.
