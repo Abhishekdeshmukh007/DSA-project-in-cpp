@@ -152,7 +152,7 @@ STOP
 ### 5.1 Circular Linked List
 
 Each rescue team node stores team information and a pointer to the next team. The last node points back to the first node.
- ```mermaid
+ ```text
       +---------+       +---------+
        | Team A  | ----> | Team B  |
        +---------+       +---------+
@@ -169,22 +169,21 @@ Key feature: The list forms a circle, allowing continuous traversal of rescue te
 ### 5.2 Doubly Linked List
 
 Each incident node contains incident information and two pointers: one to the previous node and one to the next node.
-```mermaid
+```text
 NULL <--> [Incident A] <--> [Incident B] <--> [Incident C] <--> NULL
 ```
 Key feature: Incident records can be traversed in both forward and backward directions.
 
 ## 6. Time Complexity Analysis
-```mermaid
-Operation| Data Structure| Time Complexity
-Register a team at the beginning| Circular Linked List| O(1)
-Search for an available team| Circular Linked List| O(n)
-Traverse all rescue teams| Circular Linked List| O(n)
-Insert an incident at the beginning| Doubly Linked List| O(1)
-Search for an incident| Doubly Linked List| O(n)
-Traverse incident history| Doubly Linked List| O(n)
-Find the highest-priority incident by scanning the list| Incident List| O(n)
-```
+| Operation | Data Structure | Time Complexity |
+|---|---|---|
+| Register a team at the beginning | Circular Linked List | O(1) |
+| Search for an available team | Circular Linked List | O(n) |
+| Traverse all rescue teams | Circular Linked List | O(n) |
+| Insert an incident at the beginning | Doubly Linked List | O(1) |
+| Search for an incident | Doubly Linked List | O(n) |
+| Traverse incident history | Doubly Linked List | O(n) |
+| Find the highest-priority incident | Incident List | O(n) |
 Note: The actual complexity depends on how the operations are implemented in the C++ source code. For example, inserting at the end may require O(n) time if no tail pointer is maintained.
 
 ## 7. Advantages of the Algorithms
