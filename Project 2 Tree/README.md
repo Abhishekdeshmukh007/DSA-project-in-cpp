@@ -179,9 +179,9 @@ In a balanced BST, searching and deletion take O(log n) time. In the worst case,
 
 ## Conclusion
 The program implements BST deletion using both the inorder successor and predecessor. It displays the tree before and after deletion and handles root deletion and absent keys while maintaining the BST property.
-```
 
-## 3. Test cases to demonstrate your modifications
+
+## Test cases to demonstrate your modifications
 
 Use these four tests for your project demonstration.
 
@@ -191,5 +191,4 @@ Use these four tests for your project demonstration.
 | 2 | Delete root using predecessor | Root becomes `40` |
 | 3 | Delete an absent key (`100`) | Not-found message; tree unchanged |
 | 4 | Display before and after deletion | Updated tree structure and sorted inorder output |
-
-**Important:** In the code, the sideways tree display prints the right subtree above the root and the left subtree below it. The inorder traversal provides a simple way to verify that the BST remains valid after deletion.
+```
